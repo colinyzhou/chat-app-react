@@ -4,21 +4,20 @@ import { BiPowerOff } from "react-icons/bi";
 import styled from "styled-components";
 import axios from "axios";
 
-
 export default function Logout() {
-    const navigate = useNavigate();
-    const handleClick = async () => {
-        localStorage.clear();
-        navigate("/login");
-    };
-    return (
-      <Button onClick={handleClick}>
-        <BiPowerOff />
-      </Button>
-    );
-  }
+  const navigate = useNavigate();
+  const handleClick = async () => {
+    localStorage.clear();
+    navigate("/login");
+  };
+  return (
+    <Button onClick={handleClick}>
+      <BiPowerOff />
+    </Button>
+  );
+}
 
-  const Button = styled.button`
+const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
