@@ -112,10 +112,9 @@ const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
   align-items: center;
-  background: linear-gradient(160deg, #eee, #fff); // 浅色渐变背景
-  
+  background-color: #131324;
   .brand {
     display: flex;
     align-items: center;
@@ -125,79 +124,53 @@ const FormContainer = styled.div`
       height: 5rem;
     }
     h1 {
-      color: #555;
+      color: white;
       text-transform: uppercase;
-      font-family: 'Playfair Display', serif;
-      letter-spacing: 1px;
-      font-weight: 500;
     }
   }
 
   form {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
-    background: rgba(255, 255, 255, 0.9);
+    gap: 2rem;
+    background-color: #00000076;
     border-radius: 2rem;
-    padding: 3.5rem 5.5rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
-    }
+    padding: 3rem 5rem;
   }
-  
   input {
-    background: rgba(0, 0, 0, 0.02);
-    padding: 1.2rem;
-    border: 0.1rem solid #ccc;
-    border-radius: 0.5rem;
-    color: #555;
+    background-color: transparent;
+    padding: 1rem;
+    border: 0.1rem solid #4e0eff;
+    border-radius: 0.4rem;
+    color: white;
     width: 100%;
     font-size: 1rem;
-    font-family: 'Playfair Display', serif;
-    transition: border 0.3s ease;
     &:focus {
-      border-color: #777;
+      border: 0.1rem solid #997af0;
       outline: none;
     }
   }
-  
   button {
-    background: linear-gradient(160deg, #aaa, #ccc);
-    color: #555;
+    background-color: #4e0eff;
+    color: white;
     padding: 1rem 2rem;
     border: none;
-    font-weight: 500;
+    font-weight: bold;
     cursor: pointer;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     font-size: 1rem;
     text-transform: uppercase;
-    font-family: 'Playfair Display', serif;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     &:hover {
-      background: linear-gradient(160deg, #ccc, #ddd);
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      background-color: #4e0eff;
     }
   }
-  
   span {
-    color: #555;
+    color: white;
     text-transform: uppercase;
-    font-family: 'Playfair Display', serif;
-    font-weight: 300;
-    letter-spacing: 1px;
     a {
-      color: #aaa; 
+      color: #4e0eff;
       text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
-      &:hover {
-        color: #777;
-      }
+      font-weight: bold;
     }
   }
 `;
